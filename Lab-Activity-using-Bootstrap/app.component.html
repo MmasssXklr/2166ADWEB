@@ -1,0 +1,247 @@
+        <!-- Navigation-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container px-4 px-lg-5">
+              <a class="navbar-brand" href="#!">Start Bootstrap</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                      <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="#!">All Products</a></li>
+                              <li><hr class="dropdown-divider" /></li>
+                              <li><a class="dropdown-item" href="#!">Popular Items</a></li>
+                              <li><a class="dropdown-item" href="#!">New Arrivals</a></li>
+                          </ul>
+                      </li>
+                  </ul>
+                  <form class="d-flex">
+                      <button class="btn btn-outline-dark" type="submit">
+                          <i class="bi-cart-fill me-1"></i>
+                          Cart
+                          <span class="badge bg-dark text-white ms-1 rounded-pill">{{ clickCount }}</span>
+                      </button>
+                  </form>
+                  &nbsp;    &nbsp; 
+                  <button class="btn btn-outline-dark" (click)="resetClickCount()"><i class="bi-cart-fill me-1"></i>Reset </button>
+              </div>
+          </div>
+      </nav>
+      <!-- Header-->
+      <header class="bg-dark py-5">
+          <div class="container px-4 px-lg-5 my-5">
+              <div class="text-center text-white">
+                  <h1 class="display-4 fw-bolder">Cafeteria</h1>
+                  <p class="lead fw-normal text-white-50 mb-0">Special Filipino Foods</p>
+              </div>
+          </div>
+      </header>
+      <!-- Section-->
+      <section class="py-5">
+          <div class="container px-4 px-lg-5 mt-5">
+              <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                  <div class="col mb-5"> <!-- First  -->
+                      <div class="card h-100">
+                          <!-- Product image-->
+                          <img class="card-img-top" src="https://www.unileverfoodsolutions.com.ph/dam/global-ufs/mcos/SEA/calcmenu/recipes/PH-recipes/red-meats-&-red-meat-dishes/kare-kare/kare-kare-main.jpg" alt="Kare - Kare" />
+                          <!-- Product details-->
+                          <div class="card-body p-4">
+                              <div class="text-center">
+                                  <!-- Product name-->
+                                  <h5 class="fw-bolder">Kare-Kare</h5>
+                                  <!-- Product price-->
+                                  $40.00 - $80.00
+                              </div>
+                          </div>
+                          <!-- Product actions-->
+                          <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                              <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#" (click)="clickme()">Add to cart</a></div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col mb-5"> <!-- Second -->
+                      <div class="card h-100">
+                          <!-- Sale badge-->
+                          <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                          <!-- Product image-->
+                          <img class="card-img-top" src="https://i.pinimg.com/originals/d0/22/51/d02251bbf2a403a9ce041e652e554a25.jpg" alt="Sizzling Pork Sisig" />
+                          <!-- Product details-->
+                          <div class="card-body p-4">
+                              <div class="text-center">
+                                  <!-- Product name-->
+                                  <h5 class="fw-bolder">Sizzling Pork Sisig</h5>
+                                  <!-- Product reviews-->
+                                  <div class="d-flex justify-content-center small text-warning mb-2">
+                                      <div class="bi-star-fill"></div>
+                                      <div class="bi-star-fill"></div>
+                                      <div class="bi-star-fill"></div>
+                                      <div class="bi-star-fill"></div>
+                                      <div class="bi-star-fill"></div>
+                                  </div>
+                                  <!-- Product price-->
+                                  <span class="text-muted text-decoration-line-through">$20.00</span>
+                                  $18.00
+                              </div>
+                          </div>
+                          <!-- Product actions-->
+                          <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                              <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#" (click)="clickme()">Add to cart</a></div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col mb-5"> <!-- Third -->
+                      <div class="card h-100">
+                          <!-- Sale badge-->
+                          <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                          <!-- Product image-->
+                          <img class="card-img-top" src="https://www.shutterstock.com/image-photo/photo-chicharon-bulaklak-deep-fried-260nw-2227332671.jpg" alt="Chicharon Bulaklak" />
+                          <!-- Product details-->
+                          <div class="card-body p-4">
+                              <div class="text-center">
+                                  <!-- Product name-->
+                                  <h5 class="fw-bolder">Chicharon Bulaklak</h5>
+                                  <!-- Product price-->
+                                  <span class="text-muted text-decoration-line-through">$50.00</span>
+                                  $25.00
+                              </div>
+                          </div>
+                          <!-- Product actions-->
+                          <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                              <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#" (click)="clickme()">Add to cart</a></div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col mb-5"> <!-- Fourth -->
+                      <div class="card h-100">
+                          <!-- Product image-->
+                          <img class="card-img-top" src="https://3.bp.blogspot.com/-GIHLq5FVeWI/T7NAGR4hR8I/AAAAAAAAADg/Bw1o_6bts3E/s1600/kamaru.JPG" alt="Kamaru" />
+                          <!-- Product details-->
+                          <div class="card-body p-4">
+                              <div class="text-center">
+                                  <!-- Product name-->
+                                  <h5 class="fw-bolder">Kamaru</h5>
+                                  <!-- Product reviews-->
+                                  <div class="d-flex justify-content-center small text-warning mb-2">
+                                      <div class="bi-star-fill"></div>
+                                      <div class="bi-star-fill"></div>
+                                      <div class="bi-star-fill"></div>
+                                      <div class="bi-star-fill"></div>
+                                      <div class="bi-star-fill"></div>
+                                  </div>
+                                  <!-- Product price-->
+                                  $40.00
+                              </div>
+                          </div>
+                          <!-- Product actions-->
+                          <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                              <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#" (click)="clickme()">Add to cart</a></div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col mb-5"> <!-- Fifth -->
+                      <div class="card h-100">
+                          <!-- Sale badge-->
+                          <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                          <!-- Product image-->
+                          <img class="card-img-top" src="https://amiablefoods.com/wp-content/uploads/tokwat-baboy-2-810x810-1-700x700.jpg" alt="Tokwa't Baboy" />
+                          <!-- Product details-->
+                          <div class="card-body p-4">
+                              <div class="text-center">
+                                  <!-- Product name-->
+                                  <h5 class="fw-bolder">Tokwa't Baboy</h5>
+                                  <!-- Product price-->
+                                  <span class="text-muted text-decoration-line-through">$50.00</span>
+                                  $25.00
+                              </div>
+                          </div>
+                          <!-- Product actions-->
+                          <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                              <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#" (click)="clickme()">Add to cart</a></div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col mb-5"> <!-- Sixth -->
+                      <div class="card h-100">
+                          <!-- Product image-->
+                          <img class="card-img-top" src="https://www.authenticfoodquest.com/wp-content/uploads/2021/08/RecipeforSansRivalCake_AuthenticFoodquest.jpg" alt="Sans Rival" />
+                          <!-- Product details-->
+                          <div class="card-body p-4">
+                              <div class="text-center">
+                                  <!-- Product name-->
+                                  <h5 class="fw-bolder">Sans Rival</h5>
+                                  <!-- Product price-->
+                                  $120.00 - $280.00
+                              </div>
+                          </div>
+                          <!-- Product actions-->
+                          <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                              <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#" (click)="clickme()">Add to cart</a></div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col mb-5"> <!-- Seventh -->
+                      <div class="card h-100">
+                          <!-- Sale badge-->
+                          <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                          <!-- Product image-->
+                          <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Barquillos_opened_pack_with_label.jpg/1200px-Barquillos_opened_pack_with_label.jpg" alt="Burquillos" />
+                          <!-- Product details-->
+                          <div class="card-body p-4">
+                              <div class="text-center">
+                                  <!-- Product name-->
+                                  <h5 class="fw-bolder">Burquillos</h5>
+                                  <!-- Product reviews-->
+                                  <div class="d-flex justify-content-center small text-warning mb-2">
+                                      <div class="bi-star-fill"></div>
+                                      <div class="bi-star-fill"></div>
+                                      <div class="bi-star-fill"></div>
+                                      <div class="bi-star-fill"></div>
+                                      <div class="bi-star-fill"></div>
+                                  </div>
+                                  <!-- Product price-->
+                                  <span class="text-muted text-decoration-line-through">$20.00</span>
+                                  $18.00
+                              </div>
+                          </div>
+                          <!-- Product actions-->
+                          <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                              <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#" (click)="clickme()">Add to cart</a></div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col mb-5"> <!-- Eight -->
+                      <div class="card h-100">
+                          <!-- Product image-->
+                          <img class="card-img-top" src="https://images.contentstack.io/v3/assets/blt1306150c2c4003bc/bltf96a37d2fe515b94/639009b08ea5221b4e20b951/00-panecillos-de-san-nicolas-the-delicious-solution-to-pampanga_s-yolk-problem-ig-tpbphl-cropped.jpg" alt="Panecillos de San Nicolas" />
+                          <!-- Product details-->
+                          <div class="card-body p-4">
+                              <div class="text-center">
+                                  <!-- Product name-->
+                                  <h5 class="fw-bolder">Panecillos de San Nicolas</h5>
+                                  <!-- Product reviews-->
+                                  <div class="d-flex justify-content-center small text-warning mb-2">
+                                      <div class="bi-star-fill"></div>
+                                      <div class="bi-star-fill"></div>
+                                      <div class="bi-star-fill"></div>
+                                      <div class="bi-star-fill"></div>
+                                      <div class="bi-star-fill"></div>
+                                  </div>
+                                  <!-- Product price-->
+                                  $40.00
+                              </div>
+                          </div>
+                          <!-- Product actions-->
+                          <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                              <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#" (click)="clickme()">Add to cart</a></div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <!-- Footer-->
+      <footer class="py-5 bg-dark">
+          <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2023</p></div>
+      </footer>
